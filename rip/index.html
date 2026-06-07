@@ -1,0 +1,444 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Tlantic</title>
+        
+        <link type="text/css" rel="stylesheet" href="css/styles.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="css/menu.css" media="screen" />
+        <link type="text/css" rel="stylesheet" href="css/easySlider.css" media="all" />
+        <script type="text/javascript" src="js/jquery-1.5.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.effects.core.js"></script>
+        <script type="text/javascript" src="js/menu.js"></script>
+        <script type="text/javascript" src="js/easySlider1.7.js"></script>
+        <script type="text/javascript">
+			$(document).ready(function() {
+				(function($) {
+					var cache = [];
+					$.preLoadImages = function() {
+						var args_len = arguments.length;
+						for (var i = args_len; i--;) {
+							var cacheImage = document.createElement('img');
+							cacheImage.src = arguments[i];
+							cache.push(cacheImage);
+						}
+					}
+				})(jQuery);
+				
+				jQuery.preLoadImages('images/bg_language.gif', 'images/submenu_bg.png');
+				
+				var menu = new MainMenu();
+				$("#slider").easySlider({
+					auto: true,
+					continuous: true,
+					numeric: true,
+					speed:800,
+					pause:3500
+				});
+				$("#slider-news").easySlider({
+					continuous: true,
+					numeric: true,
+					speed:800,
+					numericId: 'news-controls'
+				});
+			});
+        </script>
+    </head>
+    <body>
+    	<div id="wraper">
+    		<!-- DELIMITADOR DE LARGURA DO SITE -->
+    		<div id="main-wraper">
+    			
+    			<!-- SELEÇÃO DE LINGUAS -->
+    			<div id="language">
+    				<a class="lang-item lang-first" href="#">Português</a>
+    				<div class="lang-spacer">
+    					&nbsp;~&nbsp;
+    				</div>
+    				<a class="lang-item" href="#">English</a>
+    				<img id="globe" src="images/globe.png" />
+    			</div>
+    			
+    			<div id="header">
+    				
+    				<!-- LOGO -->
+    				<a id="logo" title="Tlantic" href="/">
+    					<img alt="Tlantic" title="Tlantic" src="images/logo.png">
+    				</a>
+    				
+    				<!-- MENU PRINCIPAL -->
+    				<div id="menu">
+    					<div id="right-menu-border"></div>
+    					<ul id="main-nav">
+    						<li>
+    							<a href="#">QUEM SOMOS</a>
+    							<ul>
+    								<li>
+    									<a href="#">Perfil</a>
+    									<ul> 
+											<li>												
+												Perfil: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+											</li>
+										</ul>
+    								</li>
+    								<li>
+    									<a href="#">Histórico</a>
+    									<ul> 
+											<li>
+												Histórico: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+											</li>
+										</ul>
+    								</li>
+    								<li>
+    									<a href="#">Parceiros</a>
+    									<ul> 
+											<li>
+												Parceiros: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+											</li>
+										</ul>
+    								</li>
+    								<li>
+    									<a class="last" href="#">Notícias</a>
+    									<ul> 
+											<li>
+												Notícias: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+											</li>
+										</ul>
+    								</li>
+								</ul>
+							</li>
+							<li class="divisor"></li>
+							<li>
+    							<a href="#">SOLUÇÕES</a>
+    							<ul>
+    								<li>
+    									<a href="#">Mobilidade</a>
+    									<ul> 
+											<li>
+												Mobilidade: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+											</li>
+										</ul>
+    								</li>
+    								<li>
+    									<a href="#">Automação</a>
+    									<ul> 
+											<li>
+												Automação: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+											</li>
+										</ul>
+    								</li>
+    								<li>
+    									<a href="#">Inteligência</a>
+    									<ul> 
+											<li>
+												Inteligência: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+											</li>
+										</ul>
+    								</li>
+    								<li>
+    									<a class="last" href="#">e-Business</a>
+    									<ul> 
+											<li>
+												e-Business: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+											</li>
+										</ul>
+    								</li>
+								</ul> 
+							</li>
+							<li class="divisor"></li>
+							<li>
+    							<a href="#">CASES</a>
+    							<ul>
+    								<li>
+    									<a href="#">Mobilidade</a>
+    									<ul> 
+											<li>
+												Mobilidade: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+											</li>
+										</ul>
+    								</li>
+    								<li>
+    									<a href="#">Automação</a>
+    									<ul> 
+											<li>
+												Automação: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+											</li>
+										</ul>
+    								</li>
+    								<li>
+    									<a href="#">Inteligência</a>
+    									<ul> 
+											<li>
+												Inteligência: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+											</li>
+										</ul>
+    								</li>
+    								<li>
+    									<a class="last" href="#">Inteligência</a>
+    									<ul> 
+											<li>
+												Inteligência: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+											</li>
+										</ul>
+    								</li>
+								</ul> 
+							</li>
+							<li class="divisor"></li>
+							<li>
+    							<a href="#">CONTATO</a>
+    						</li>
+    					</ul>
+    					<div id="left-menu-border"></div>
+    				</div>
+    			</div>
+    			
+    			<!-- SLIDESHOW -->
+    			<div id="slideshow-wraper">
+    				<div id="slideshow">
+    					<div id="slider">
+							<ul>				
+								<li><a href="#"><img src="slideshow/img1.jpg" alt="Alt para imagem" /></a></li>
+								<li><a href="#"><img src="slideshow/img2.jpg" alt="Alt para imagem" /></a></li>
+								<li><a href="#"><img src="slideshow/img3.jpg" alt="Alt para imagem" /></a></li>
+								<li><a href="#"><img src="slideshow/img4.jpg" alt="Alt para imagem" /></a></li>
+							</ul>
+						</div>
+    				</div>
+    			</div>
+    			
+    			<!-- SOBRE A TLANTIC -->
+    			<div id="sobre-tlantic"></div>
+    			
+    			
+    			<!-- NOTÍCIAS -->
+    			<div id="wraper-noticias">
+    				<img id="img-noticias" src="images/img-noticias.png" />
+    				<a id="mais-noticias" href="#">
+    					<img src="images/mais-noticias.png" />
+    				</a>
+    				<div id="noticias-divisor"></div>
+    				<div id="slider-news">
+						<ul>				
+							<li>
+								<a>
+									<div class="news">
+										<img src="images/noticia.gif" />
+										<div class="news-date">8 - Jan - 2011</div>
+										<br />
+										<a class="news-titulo" href="#">Tlantic present na NRF 2011</a>
+										<p class="news-p">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor consectetur adipisicing.
+										</p>
+									</div>
+									<div class="news">
+										<img src="images/noticia.gif" />
+										<div class="news-date">8 - Jan - 2011</div>
+										<br />
+										<a class="news-titulo" href="#">Tlantic present na NRF 2011</a>
+										<p class="news-p">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor consectetur adipisicing.
+										</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a>
+									<div class="news">
+										<img src="images/noticia.gif" />
+										<div class="news-date">8 - Jan - 2011</div>
+										<br />
+										<a class="news-titulo" href="#">Tlantic present na NRF 2011</a>
+										<p class="news-p">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor consectetur adipisicing.
+										</p>
+									</div>
+									<div class="news">
+										<img src="images/noticia.gif" />
+										<div class="news-date">8 - Jan - 2011</div>
+										<br />
+										<a class="news-titulo" href="#">Tlantic present na NRF 2011</a>
+										<p class="news-p">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor consectetur adipisicing.
+										</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a>
+									<div class="news">
+										<img src="images/noticia.gif" />
+										<div class="news-date">8 - Jan - 2011</div>
+										<br />
+										<a class="news-titulo" href="#">Tlantic present na NRF 2011</a>
+										<p class="news-p">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor consectetur adipisicing.
+										</p>
+									</div>
+									<div class="news">
+										<img src="images/noticia.gif" />
+										<div class="news-date">8 - Jan - 2011</div>
+										<br />
+										<a class="news-titulo" href="#">Tlantic present na NRF 2011</a>
+										<p class="news-p">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor consectetur adipisicing.
+										</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+    			</div>
+    		</div>
+    		
+    		<!-- RODAPÉ -->
+    		<div id="footer-wraper">
+    			<div id="footer-line-1"></div>
+    			<div id="footer-line-2"></div>
+    			<div id="footer-line-3">
+    				<div id="sitemap-wraper">
+    					<div id="sitemap-solid-bg"></div>
+    					<div id="sitemap-content">
+    						<ul class="primeira">
+	    						<li>
+	    							<a href="#">QUEM SOMOS</a>
+	    							<ul>
+	    								<li>
+	    									<a href="#">Perfil</a>
+	    								</li>
+	    								<li>
+	    									<a href="#">Histórico</a>
+	    								</li>
+	    								<li>
+	    									<a href="#">Parceiros</a>
+	    								</li>
+	    								<li>
+	    									<a href="#">Notícias</a>
+	    								</li>
+									</ul>
+								</li>
+							</ul>
+							<ul>
+	    						<li>
+	    							<a href="#">Mobilidade</a>
+	    							<ul>
+	    								<li>
+	    									<a href="#">Overview</a>
+	    								</li>
+	    								<li>
+	    									<a href="#">Mobile Portal</a>
+	    								</li>
+	    								<li>
+	    									<a href="#">Mobile Picking</a>
+	    								</li>
+	    								<li>
+	    									<a href="#">Mobile Executive</a>
+	    								</li>
+	    								<li>
+	    									<a href="#">Mobile Logistics</a>
+	    								</li>
+	    								<li>
+	    									<a href="#">Mobile Commerce</a>
+	    								</li>
+	    								<li>
+	    									<a href="#">Cases</a>
+	    								</li>
+									</ul>
+								</li>
+							</ul>
+							<ul>
+	    						<li>
+	    							<a href="#">Automação</a>
+	    							<ul>
+	    								<li>
+	    									<a href="#">Overview</a>
+	    								</li>
+	    								<li>
+	    									<a href="#">Unifo</a>
+	    								</li>
+	    								<li>
+	    									<a href="#">Postos de Escuta</a>
+	    								</li>
+	    								<li>
+	    									<a href="#">Etiquetas Eletrôncias</a>
+	    								</li>
+	    								<li>
+	    									<a href="#">Cases</a>
+	    								</li>
+									</ul>
+								</li>
+							</ul>
+							<ul>
+	    						<li>
+	    							<a href="#">Inteligência</a>
+	    							<ul>
+	    								<li>
+	    									<a href="#">Overview</a>
+	    								</li>
+	    								<li>
+	    									<a href="#">Powersheets</a>
+	    								</li>
+	    								<li>
+	    									<a href="#">Cases</a>
+	    								</li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="penultima">
+	    						<li>
+	    							<a href="#">e-Business</a>
+	    							<ul>
+	    								<li>
+	    									<a href="#">Overview</a>
+	    								</li>
+	    								<li>
+	    									<a href="#">e-Commerce B2C</a>
+	    								</li>
+	    								<li>
+	    									<a href="#">e-Commerce B2B</a>
+	    								</li>
+	    								<li>
+	    									<a href="#">Intranets & Gestão de Conteúdo</a>
+	    								</li>
+	    								<li>
+	    									<a href="#">Cases</a>
+	    								</li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="last">
+	    						<li>
+	    							<ul>
+	    								<li>
+	    									<a href="#">Contato</a>
+	    									<ul>
+			    								<li>
+			    									<a href="#">Fale Conosco</a>
+			    								</li>
+			    							</ul>
+	    								</li>
+	    								<li class="last-li">
+	    									<a href="#">Trabalhe Conosco</a>
+	    									<ul>
+			    								<li>
+			    									<a href="#">Vagas</a>
+			    								</li>
+			    								<li>
+			    									<a href="#">Envie Seu Currículo</a>
+			    								</li>
+			    								<li>
+			    									<a href="#">Atualização de Currículo</a>
+			    								</li>
+			    							</ul>
+	    								</li>
+	    								
+									</ul>
+								</li>
+							</ul>
+    					</div>
+    				</div>
+    			</div>
+    			<div id="footer-line-4"></div>
+    		</div>
+    	</div>
+    </body>
+</html>

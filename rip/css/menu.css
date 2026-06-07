@@ -1,0 +1,139 @@
+/* MENU */
+#menu{
+	height: 75px;
+	float:right;
+}
+
+#left-menu-border{
+	width: 35px;
+	height: 75px;
+	float:right;
+	background: url("../images/menu_sprites.png") no-repeat 0px 0px;
+}
+
+#right-menu-border{
+	width: 35px;
+	height: 75px;
+	float:right;
+	background: url("../images/menu_sprites.png") no-repeat 0px -75px;
+}
+
+#main-nav {
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+#main-nav li a, #main-nav li {
+	float: left;
+}
+
+#main-nav > li {
+	list-style: none;
+	position: relative;
+	background: url("../images/menu_sprites.png") repeat-x 0px -150px;
+	height:75px;
+}
+#main-nav li.divisor {
+	background: url("../images/menu_sprites.png") repeat-x 0px -225px;
+	width:1px;
+}
+#main-nav li a {
+	margin-top: 3px;
+	padding: 0px 21px 0px 21px;
+	line-height:65px;
+	height:65px;
+	text-decoration: none;
+	font-family: 'FuturaMdBTBold';
+	font-weight:bold;
+	font-size: 18px;
+	color: #e3f4b3;
+	text-shadow: 2px 2px #1957a2;
+}
+
+#main-nav li a:hover {
+	color: #fffbff;
+	background: url("../images/menu_sprites.png") repeat-x 0px -301px;
+	text-shadow: 2px 2px #00295f;
+}
+
+
+/* SUBMENU */
+.hasChildren {
+	position: absolute;
+	width: 5px; height: 5px;
+	background: black;
+	right : 0;
+	bottom: 0;
+}
+
+#main-nav li ul {
+	display: none;
+	z-index:999;
+	position: absolute;
+	left: 0;
+	top: 90%;
+	padding: 10px 0px 10px 0px;
+	margin: 0;
+	background: url("../images/submenu_bg.png") repeat 0px 0px;
+}
+
+#main-nav li:hover > ul {
+	display: block;
+	border-bottom: solid 2px #e2f2b3;
+}
+
+#main-nav li ul li, #main-nav li ul li a {
+	/*position: relative;*/
+	list-style: none;
+	float: none;
+}
+
+#main-nav li ul li {
+	_display: inline; /* PARA O IE6 */
+}
+
+#main-nav li ul li a {
+	width: 130px;
+	display: block;
+	margin:0 !important;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+	height: auto;
+	min-height: 29px;
+	line-height:29px;
+	border-bottom: solid 1px #3e618b;
+	text-shadow: none;
+	text-align: center;
+}
+
+#main-nav li ul li a.last{
+	border-bottom: none;
+}
+
+#main-nav li ul li a:hover{
+	background:#1facf3;
+	color:white;
+	text-shadow: none;
+}
+
+/* SUBMENU INFO */
+
+#main-nav li ul li ul {
+	display: none;
+}
+
+#main-nav li ul li:hover ul {
+	left: -200px;
+	top: 0;
+}
+
+#main-nav li ul li ul li{
+	display: block;
+	width: 160px;
+	padding: 8px 20px 0px 20px;
+	margin:0 !important;
+	font-size: 12px;
+	color:#c5dce6;
+	min-height: 111px;
+}

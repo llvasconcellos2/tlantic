@@ -1,0 +1,79 @@
+/* Easy Slider */
+
+#slider ul, #slider li,
+#slider-news ul, #slider-news li{
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+#slider2{margin-top:1em;}
+#slider li{ 
+	/* 
+		define width and height of list item (slide)
+		entire slider area will adjust according to the parameters provided here
+	*/ 
+	width:600px;
+	height:300px;
+	overflow:hidden; 
+	}
+#prevBtn, #nextBtn,
+#slider1next, #slider1prev{ 
+	display:block;
+	width:30px;
+	height:77px;
+	position:absolute;
+	left:-30px;
+	top:71px;
+	z-index:1000;
+	}	
+#nextBtn, #slider1next{ 
+	left:600px;
+	}														
+#prevBtn a, #nextBtn a,
+#slider1next a, #slider1prev a{  
+	display:block;
+	position:relative;
+	width:30px;
+	height:77px;
+	background:url(../images/btn_prev.gif) no-repeat 0 0;	
+	}	
+#nextBtn a, #slider1next a{ 
+	background:url(../images/btn_next.gif) no-repeat 0 0;	
+	}	
+	
+/* numeric controls */	
+
+ol#controls{
+	/*margin:1em 0;*/
+	padding:0;
+	height:18px;
+	position: absolute;
+	margin-top:-296px;
+	width:596px;
+}
+ol#controls li{
+	margin:0 0 0 4px; 
+	padding:0;
+	float:right;
+	list-style:none;
+	height:18px;
+	line-height:18px;
+}
+ol#controls li a{
+	float:left;
+	height:18px;
+	line-height:18px;
+	border:1px solid #ccc;
+	background:#112e50;
+	color:#ffffff;
+	padding:0 6px;
+	text-decoration:none;
+	font-size:10px;
+}
+ol#controls li.current a{
+	background:#5DC9E1;
+	color:#fff;
+}
+ol#controls li a:focus, #prevBtn a:focus, #nextBtn a:focus{outline:none;}
+	
+/* // Easy Slider */
